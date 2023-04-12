@@ -18,7 +18,7 @@ class LineSeries<T, D> extends XyDataSeries<T, D> {
       ChartSeriesRendererFactory<T, D>? onCreateRenderer,
       required List<T> dataSource,
       required ChartValueMapper<T, D> xValueMapper,
-      required ChartValueMapper<T, num> yValueMapper,
+      required ChartValueMapper<T, String> yValueMapper,
       ChartValueMapper<T, dynamic>? sortFieldValueMapper,
       ChartValueMapper<T, Color>? pointColorMapper,
       ChartValueMapper<T, String>? dataLabelMapper,

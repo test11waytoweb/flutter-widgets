@@ -48,7 +48,7 @@ class _MyHomePageState extends State<_MyHomePage> {
               LineSeries<_SalesData, String>(
                   dataSource: data,
                   xValueMapper: (_SalesData sales, _) => sales.year,
-                  yValueMapper: (_SalesData sales, _) => sales.sales,
+                  yValueMapper: (_SalesData sales, _) => sales.sales.toString(),
                   name: 'Sales',
                   // Enable data label
                   dataLabelSettings: const DataLabelSettings(isVisible: true))

@@ -225,7 +225,7 @@ class CircularSeries<T, D> extends ChartSeries<T, D>
   ///}
   ///```
   @override
-  final ChartIndexedValueMapper<num>? yValueMapper;
+  final ChartIndexedValueMapper<String>? yValueMapper;
 
   /// Maps the field name, which will be considered as data point color.
   ///

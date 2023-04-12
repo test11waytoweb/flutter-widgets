@@ -32,7 +32,7 @@ class RadialBarSeries<T, D> extends CircularSeries<T, D> {
       ChartPointInteractionCallback? onPointLongPress,
       List<T>? dataSource,
       required ChartValueMapper<T, D> xValueMapper,
-      required ChartValueMapper<T, num> yValueMapper,
+      required ChartValueMapper<T, String> yValueMapper,
       ChartValueMapper<T, Color>? pointColorMapper,
       ChartShaderMapper<T>? pointShaderMapper,
       ChartValueMapper<T, String>? pointRadiusMapper,

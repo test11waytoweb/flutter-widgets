@@ -30,7 +30,7 @@ class PieSeries<T, D> extends CircularSeries<T, D> {
       ChartPointInteractionCallback? onPointLongPress,
       List<T>? dataSource,
       ChartValueMapper<T, D>? xValueMapper,
-      ChartValueMapper<T, num>? yValueMapper,
+      ChartValueMapper<T, String>? yValueMapper,
       ChartValueMapper<T, Color>? pointColorMapper,
       ChartShaderMapper<T>? pointShaderMapper,
       ChartValueMapper<T, String>? pointRadiusMapper,
