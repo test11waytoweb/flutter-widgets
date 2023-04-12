@@ -3189,17 +3189,7 @@ CartesianChartPoint<dynamic>? getChartPoint(
 
   if (xVal != null) {
     if (yVal != null) {
-      assert(
-          yVal.runtimeType == num ||
-              yVal.runtimeType == double ||
-              yVal.runtimeType == int ||
-              yVal.runtimeType.toString() == 'List<num?>' ||
-              yVal.runtimeType.toString() == 'List<num>' ||
-              yVal.runtimeType.toString() == 'List<double?>' ||
-              yVal.runtimeType.toString() == 'List<double>' ||
-              yVal.runtimeType.toString() == 'List<int?>' ||
-              yVal.runtimeType.toString() == 'List<int>',
-          'The Y value will accept only number or list of numbers.');
+      yVal = double.parse(yVal.replaceAll(',',''));
     }
     if (yVal != null && series is BoxAndWhiskerSeries) {
       final List<dynamic> yValues = yVal;
