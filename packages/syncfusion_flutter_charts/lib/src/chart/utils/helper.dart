@@ -3189,7 +3189,7 @@ CartesianChartPoint<dynamic>? getChartPoint(
 
   if (xVal != null) {
     if (yVal != null) {
-      yVal = double.parse(yVal.replaceAll(',',''));
+      //yVal = double.parse(yVal.replaceAll(',',''));
     }
     if (yVal != null && series is BoxAndWhiskerSeries) {
       final List<dynamic> yValues = yVal;
